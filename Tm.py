@@ -50,13 +50,13 @@ def auto_verification():
     email_id = latest_email['id']
     email_content = read_email(username, domain, email_id)
     print(f"Subject: {email_content['subject']}")
-    print(f"From: {email_content['from']}")
-    print(f"Body: {email_content['body']}")
+    # print(f"From: {email_content['from']}")
+    # print(f"Body: {email_content['body']}")
 
     # Step 5: Extract verification code or link from the email body
     # Modify this based on your email content structure
-    verification_link = email_content['body']  # Example: If the body contains the link
-    print(f"Verification Link: {verification_link}")
+    # verification_link = email_content['body']  # Example: If the body contains the link
+    # print(f"Verification Link: {verification_link}")
 
 # Run the automation
 if __name__ == "__main__":
